@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+body{
+    background-color: rgb(231, 180, 187);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+#navbar{
+    background-color: honeydew;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-around;
+   overflow: hidden; 
+}
+#navbar a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-top: 0.4rem;
+    color: gray;
+}
+#navbar a i{
+    padding-right: 10px;
+}
+
+
+#content{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    height: 95vh;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(223, 157, 166);
+    margin: 1vh 5vh 5vh 5vh;
+}
+
+.welcome{
+    text-align: center;
+    text-transform: uppercase;
+}
+.SignIn{
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.SignIn form{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+}
+input{
+    border-style: none;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+button{
+    margin-top: 2rem;
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: hotpink;
+}
+
+#social a{
+    font-size: 2.5rem;
+    margin-left: 0.3em;
+}
+.fa-google{
+    color: rgb(238, 238, 216);
+}
+.fa-facebook{
+    color: rgb(58, 58, 170);
+}
+
+@media (max-width: 1024px) {
+    #content{
+        display: grid;
+        grid-template-columns:1fr;
+        
+    }
+}
+@media (max-width: 690px) {
+    #navbar a{
+        font-size: 0.8em;
+    }
+    input{
+        font-size: 0.8rem;
+        padding-left: 10px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 425px) {
+    
+    label{
+        display: block;
+        margin-top: .4em;
+    }
+    input{
+        font-size: 1.4rem;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+}
